@@ -18,7 +18,7 @@ Dev
 
 ## Authors
  
-* **LETÍCIA VIEIRA Domingues**
+* **LETÍCIA VIEIRA DOMINGUES**
  
  
 Thanks to visiting me and good coding!
