@@ -1,17 +1,9 @@
-#include <stdio.h>
+int qtdElementos(tfila f){
+	
+	while(f.ini<=f.fim){
+		i++;
+f.ini++;
+	} 
 
-void mostraFila(struct Fila *f){
-
-	int cont, i;
-
-	for ( cont=0, i= f->primeiro; cont < f->nItens; cont++){
-
-		printf("%.2f\t",f->dados[i++]);
-
-		if (i == f->capacidade)
-			i=0;
-
-	}
-	printf("\n\n");
-
+	return i;
 }
