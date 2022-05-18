@@ -1,13 +1,15 @@
-#include <stdio.h>
-
-void mostra(tfila f){
- int i;	
-	for(i=1;i<=f.qtd;i++){
-		printf("%s:%d |", f.fila[f.ini].nome,
-		                  f.fila[f.ini].idade);
-		if(f.ini == MAX-1)
-		  f.ini = 0;
-		else  
-		  f.ini++;                 
+int buscaRg(tfila f, int rgbusca){
+	int pos = 0 , achou =0;
+	
+	while(f.ini<=f.fim){
+		pos++;
+		if(rgbusca==f.fila[f.ini].rg){
+			achou = 1;
+			return pos;
+		}
+		f.ini ++;
+	} // fim hile
+	if(achou == 0){
+		return 0;
 	}
-	printf("\n");
+}
